@@ -55,33 +55,53 @@ h2 {
     align-items: center;
     justify-content: center;
     position: fixed;
-    width: auto;
+    top: 0px;
+    width: 100%;
     background-color: #999;
-    color: #fff;
 }
 
 .navigation a {
   display: block;
-  color: #ddd;
+  color: lightgrey;
   text-decoration: none;
   padding: 1em;
   font-weight: 400;
 }
 
+.navigation a:hover {
+  color: white;
+}
 
 .navigation:hover {
  background-color: #aaa;
 }
 
 .active {
-  color: white;
   background-color: rgba(0,0,0,0.1);
+  color: white !important;
 }
 
 footer {
   margin-top: 400px;
 }
 
+
+.profile-picture {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.profile-avatar {
+  margin-right: 20px;
+}
+
 .home-title {
+  margin-left: 20px;
+}
+
+.home-presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 100px;
 }
