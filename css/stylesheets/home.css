@@ -186,6 +186,14 @@ footer {
 .two {
   background-color: #555;
   height: 100vh;
+  display: flex;
+  flex-direction:: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.two h2 {
+  color: lightgrey;
 }
 
 .computer-logo {
