@@ -33,3 +33,28 @@ $(window).scroll(function() {
         }
     });
 }).scroll();
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+};
+
+const logosTechnos = document.querySelectorAll('.technos img');
+logosTechnos.forEach((logo, index) =>{
+  sleep(index * 1000).then(() => {
+    logo.classList.remove('hide')
+  });
+});
+
+const chevronDown = document.querySelector('.chevron-down');
+const navBar = document.querySelectorAll('.nav-link');
+const welcome = document.getElementById('welcome')
+const page = document.querySelector('html');
+
+sleep(5200).then(() => {
+  chevronDown.style.display ='flex'
+  navBar.forEach((link) => {
+    link.classList.remove('hide')
+  });
+  welcome.classList.add('hide')
+  page.style.overflow = 'visible'
+});
