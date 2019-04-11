@@ -47,7 +47,7 @@ logosTechnos.forEach((logo, index) =>{
 
 const chevronDown = document.querySelector('.chevron-down');
 const navBar = document.querySelectorAll('.nav-link');
-const welcome = document.getElementById('welcome')
+const welcome = document.getElementById('welcome-txt')
 const page = document.querySelector('html');
 
 sleep(5200).then(() => {
@@ -55,6 +55,6 @@ sleep(5200).then(() => {
   navBar.forEach((link) => {
     link.classList.remove('hide')
   });
-  welcome.classList.add('hide')
-  page.style.overflow = 'visible'
+  welcome.style.display = 'none'
+  // page.style.overflow = 'visible'
 });
