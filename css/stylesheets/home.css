@@ -187,6 +187,12 @@ footer {
 .two {
   background-color: #555;
   height: 100vh;
+/*  display: flex;
+  justify-content: center;
+  align-items: center;*/
+}
+
+.content-two {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -310,7 +316,37 @@ footer {
   text-decoration: none;
 }
 
+.chevron-down2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #555;
+  animation-name: slideDown2;
+  animation-duration: .7s;
+  animation-iteration-count: infinite;
+}
+
+.chevron-down2 a{
+  color: #ddd;
+  text-decoration: none;
+}
+
+.chevron-down2 a:hover{
+  color: #eee;
+  text-decoration: none;
+}
+
 @keyframes slideDown {
+    from {
+      padding-top: 60px;
+    }
+    to {
+      padding-top: 50px;
+    }
+}
+
+@keyframes slideDown2 {
     from {
       padding-top: 60px;
     }
