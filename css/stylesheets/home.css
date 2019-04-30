@@ -11,10 +11,6 @@
   transition: all .1s ease;
 }
 
-html {
-  overflow-y: hidden;
-}
-
 html, body {
   height: 100%;
   margin: 0;
