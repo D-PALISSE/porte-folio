@@ -1,0 +1,211 @@
+.white-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  color: #333;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-name: fadeout;
+  animation-fill-mode: forwards;
+  position: fixed;
+  }
+
+.white-container h1 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.logo-lewagon {
+  width: 450px;
+}
+
+.skills-tagline {
+  text-align: center;
+  }
+
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.wrapper-skills {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%
+  height: 100vh;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-name: fadein;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.red-container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #333;
+  height: 100vh;
+  width: 50%;
+  color: #F3D9B1;
+/*  animation-duration: 2s;
+  animation-delay: 3.5s;
+  animation-name: slidein;
+  animation-fill-mode: forwards;
+  opacity: 0;*/
+}
+
+/*@keyframes slidein {
+    from {
+        opacity: 0;
+        height: 0px;
+    }
+    to {
+        opacity: 1;
+        height: 100vh;
+    }
+}*/
+
+.red-container-2 h1 {
+  font-size: 20px;
+}
+
+.white-container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 50%;
+  color:  #F3D9B1;
+  background-color: #D81159;
+  }
+
+
+.diplome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 100px 0;
+}
+
+.diplome-img {
+  width: 90px;
+}
+
+.fullstack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.computer-img {
+  width: 130px;
+}
+
+.lewagon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lewagon2-img {
+  width: 180px;
+}
+
+.skills-technos-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-skills {
+  background-color: #F3D9B1;
+  padding: 100px;
+  border-radius: 50%;
+}
+
+.crea-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 50px;
+  right: 70px;
+}
+
+#btn-home-2 {
+  opacity: 1;
+  color: #F3D9B1;
+  /*background-color: #F3D9B1;*/
+  padding: 10px 40px 10px 20px;
+  text-decoration: none;
+  font-size: 25px;
+  border-radius: 8px;
+}
+
+#btn-home-2:hover {
+  /*background-color: #D81159;*/
+  color: #444;
+  /*font-size: 30px;*/
+  }
+
+  @media (max-width: 1100px) {
+    .title-skills {
+      padding: 40px;
+    }
+    .crea-btn {
+      right: 0px;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .wrapper-skills {
+      display: block;
+    }
+    .red-container-2 {
+      height: auto;
+      width: 100%;
+      padding: 70px 0px;
+    }
+    .white-container-2 {
+      height: auto;
+      width: 100%;
+      padding: 50px 0px;
+    }
+    .diplome {
+      margin: 80px 0px;
+    }
+    .title-skills {
+      padding: 80px;
+    }
+    .crea-btn {
+      position: static;
+/*      bottom: -30px;
+      right: -50px;*/
+      margin-top: 80px;
+    }
+  }

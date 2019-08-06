@@ -1,100 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="css/stylesheets/home.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700' rel='stylesheet' type='text/css'>
-  <title>David Palisse - Web Developer</title>
-</head>
-<body>
-
-
-  <div class='wrapper'>
-  <nav class="navigation" id="mainNav">
-    <a class="nav-link hide" href="#1">Home</a>
-    <a class="nav-link hide" href="#2">Tagline</a>
-    <a class="nav-link hide" href="#3">Products</a>
-    <a class="nav-link hide" href="#4">Skills</a>
-    <a class="nav-link hide" href="#5">Graduation</a>
-    <a class="nav-link hide" href="#6">Profile</a>
-    <a class="nav-link hide" href="#7">Contact</a>
-    <h3 id="welcome-txt">Welcome !<!-- <img src="css/images/ruby.png" alt="" id="navlogo"> --></h3>
-  </nav>
-
-  <div class="page-section one" id="1">
-    <div class="home-presentation">
-      <div class="profile-avatar">
-        <img src="css/images/pp.jpg" alt="David Palisse" class="profile-picture">
-      </div>
-      <div class="home-title">
-        <h1 class="lightblack-title center-align">David Palisse</h1>
-        <div class="typewriter">
-          <div class="typewriter-text center-align"><span class="color-yellow">&lt;</span><span class="color-red">h2</span><span class="color-yellow">></span><span class="content">Web Developer.</span><span class="color-yellow">&lt;/</span><span class="color-red">h2</span><span class="color-yellow">></span></div>
-        </div>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/stylesheets/home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700' rel='stylesheet' type='text/css'>
+    <title>David Palisse - Web Developer</title>
+  </head>
+  <body>
+    <div class="wrapper-intro">
+      <nav class="navigation" id="mainNav">
+        <a class="nav-link active" href="index.html">Accueil</a>
+        <a class="nav-link" href="skills.html">Compétences</a>
+        <a class="nav-link" href="portefolio.html">Créations</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+      <nav class="navigation-xs">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fas fa-bars burger"></i>
+        </a>
+      </nav>
+    <div class="topnav">
+      <div id="myLinks">
+        <a class="active" href="index.html">Accueil</a>
+        <a class="" href="skills.html">Compétences</a>
+        <a class="" href="portefolio.html">Créations</a>
+        <a class="" href="contact.html">Contact</a>
       </div>
     </div>
-    <div class="section-title">
-      <div class="typewriter">
-        <div class="typewriter-text center-align dots">.................</div>
+    <img class="welcome-img" src="css/images/ruby.png" alt="">
+    <div class="typewriter">
+      <div class="typewriter-text">
+        <h1 class="welcome-txt" style="color: #F3D9B1">Welcome!</h1>
       </div>
     </div>
-    <div class="section-content">
-      <img src="css/images/computer.png" alt="computer" class="computer-logo">
-      <div class="section-text">
-        <h1 style='color: #222;'>Full-Stack Dev</h1>
-        <div class="technos">
-          <img src="css/images/ruby.png" alt="" class="logo-width-80 hide ruby">
-          <img src="css/images/rails.png" alt="" class="logo-width-50 hide">
-          <img src="css/images/html.png" alt="" class="logo-width-80 hide">
-          <img src="css/images/css.png" alt="" class="logo-width-60 hide">
-          <img src="css/images/js.png" alt="" class="logo-width-80 hide">
-        </div>
-      </div>
-    </div>
-  <div class="chevron-down">
-    <a href="#2"><i class="fas fa-chevron-down"></i></a>
   </div>
-  </div>
-  <div class="page-section two" id="2">
-    <div class="content-two">
-      <div class="tagline">
-        <h1>Everything is possible</h1>
-        <h2>Own a website which will represent you</h2>
-        <h2>or your buisness</h2>
+  <div class="page-section" id="1">
+    <div class="wrapper-home">
+      <img class="avatar" src="css/images/face2.png" alt="">
+      <h1 class="custom-title">David Palisse</h1>
+      <h1 class="home-subtitle">Développeur web fullstack</h1>
+      <div class="technos">
+        <img src="css/images/ruby.png" alt="" class="logo-width-80 hide ruby">
+        <img src="css/images/rails.png" alt="" class="logo-width-50 hide">
+        <img src="css/images/html.png" alt="" class="logo-width-80 hide">
+        <img src="css/images/css.png" alt="" class="logo-width-60 hide">
+        <img src="css/images/js.png" alt="" class="logo-width-80 hide">
       </div>
-      <div class="image-two">
-        <img style="width: 800px;" src="css/images/mosaic.png" alt="">
-      </div>
-    </div>
-    <div class="chevron-down2">
-      <a href="#3"><i class="fas fa-chevron-down"></i></a>
+      <a href="skills.html" class="btn-custom" id="btn-home">Découvrir &nbsp; <i class="fas fa-arrow-right"></i></a>
     </div>
   </div>
-  <div class="page-section three" id="3">
-    <h1>Section Three</h1>
-  </div>
-  <div class="page-section foor" id="4">
-    <h1>Section Four</h1>
-  </div>
-  <div class="page-section five" id="5">
-    <h1>Section Five</h1>
-  </div>
-  <div class="page-section six" id="6">
-    <h1>Section Six</h1>
-  </div>
-  <div class="page-section seven" id="7">
-    <h1>Section Seven</h1>
-  </div>
-  <div class="page-section height" id="8">
-  </div>
-
-  <footer>
-    Mentions légales
-  </footer>
-  </div>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript" src="application.js"></script>
 </body>
